@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import { app } from '../Firebase';
 import { getFirestore, collection, addDoc } from 'firebase/firestore';
+import { useNavigate } from 'react-router-dom';
 
 const AddFaculty = () => {
     const [fNo, setFNo] = useState('');
     const [fName, setFName] = useState('');
+
+    const navigate = useNavigate();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -16,6 +19,7 @@ const AddFaculty = () => {
         // console.log("#Data", docRef);
         setFNo('');
         setFName('');
+        navigate('/fctyList');
     }
 
     return (
