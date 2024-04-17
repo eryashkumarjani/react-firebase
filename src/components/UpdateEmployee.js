@@ -16,7 +16,7 @@ const UpdateEmployee = () => {
         setFile(event.target.files[0]);
     }
 
-    console.log("#Location Data", location);
+    // console.log("#Location Data", location);
 
     const submitHandler = async (e) => {
         e.preventDefault();

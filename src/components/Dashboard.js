@@ -7,6 +7,8 @@ const Dashboard = () => {
             <div style={{ width: '20%', backgroundColor: 'lightblue', height: '100vh', padding: '2rem' }}>
                 <Link to="/addEmp" style={{ color: 'black', display: 'block' }}> Add Employee</Link>
                 <Link to="/EmpList" style={{ color: 'black', display: 'block' }}> Employee List</Link>
+                <Link to="/addFcty" style={{ color: 'black', display: 'block' }}> Add Faculty</Link>
+                <Link to="/fctyList" style={{ color: 'black', display: 'block' }}> Faculty List</Link>
             </div>
             <div style={{ width: '80%', height: '100vh', padding: '2rem' }}>
                 <Outlet />
